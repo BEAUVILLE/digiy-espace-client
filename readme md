@@ -1,0 +1,101 @@
+# 🦅 DIGIY GO — Mon Espace Client
+
+**DIGIY GO** est l’espace client officiel de l’écosystème **DIGIYLYFE**.  
+C’est la porte d’entrée unique pour les **clients** (pas les pros) :  
+chauffeurs, logements, restaurants, bons plans, marketplace, jobs… tout se rassemble ici.
+
+- 🎯 Cible : clients / usagers (grand public)
+- 💸 Accès : 100% **gratuit pour les clients**
+- 🦅 Modèle : **0% commission**, paiement direct au professionnel
+- 🌍 Terrain : Afrique d’abord (Sénégal), ouvert au monde
+
+---
+
+## 🚀 Fonctionnalités principales
+
+### 1. Hero “DIGIY GO — Espace client”
+- Présentation claire de l’espace client
+- Message clé :  
+  > “Tu contrôles toutes tes demandes DIGIY au même endroit.”
+- Bandeaux :
+  - Accès client gratuit
+  - Paiement direct au pro
+  - 0% commission DIGIY
+
+### 2. Grille de modules (façon DIGIY HUB pro)
+
+Tous les services clients sont accessibles sous forme de **cartes-modules** :
+
+- 🚗 **DIGIY DRIVER** — Commander un VTC DIGIY  
+- 🏠 **DIGIY LOC** — Voir les logements en direct propriétaire  
+- 🍽️ **DIGIY RESTO** — Découvrir les restaurants DIGIY  
+- 📅 **DIGIY RÉSA** — Réserver un service / une table  
+- 🛍️ **DIGIY MARKET** — Marketplace locale DIGIY  
+- 🧾 **DIGIY POS** — Vitrines de boutiques DIGIY POS  
+- 💳 **DIGIY PAY** — Préparation du futur wallet DIGIY  
+- 🏗️ **DIGIY BUILD** — Artisans & BTP DIGIY  
+- 💼 **DIGIY JOBS** — Emploi & talents (Sénégal ⇄ France)  
+- 💡 **DIGIY BON PLAN** — Bons plans & offres sélectionnées  
+- 📝 **INSCRIPTION DIGIY** — Portail d’inscription PRO  
+- 🎯 **MON ESPACE DIGIY PRO** — HUB abonnés professionnels  
+
+Chaque module :
+- Affiche une **icône**
+- Un **nom**
+- Une **tagline**
+- Un **bouton d’ouverture**
+- Un **statut** : LIVE / PRIORITÉ / BIENTÔT
+
+---
+
+## 💳 Paiement — Philosophie DIGIY
+
+Le code contient un bloc “Payer une réservation” qui rappelle clairement :
+
+- Le client paye **directement** le professionnel :
+  - Wave / Orange Money / Free Money
+  - Virement bancaire
+  - Cash selon accord
+- DIGIY ne touche **aucune commission**
+- Un bouton affiche des **instructions simples** dans une alerte
+
+> Cet espace ne fait **pas d’appel API de paiement** :  
+> V1 = infos + instructions, 0 frais, 0 complexité.
+
+---
+
+## 📂 Structure du projet
+
+Ce projet est **un seul fichier HTML** :
+
+- `index.html` (ou `mon-espace-digiy-client.html` selon ton choix)
+
+Tout est inclus dans ce fichier :
+- HTML
+- CSS (dans `<style>`)
+- JavaScript (dans `<script>` à la fin)
+
+Aucun build, aucune dépendance, aucune librairie externe nécessaire.
+
+---
+
+## 🔗 Configuration des URLs (ROUTES)
+
+En bas du fichier, un objet `ROUTES` centralise toutes les URLs :
+
+```js
+const ROUTES = {
+  go: "https://beauville.github.io/digiy-go",
+  driver: "https://beauville.github.io/digiy-driver-client/",
+  loc: "https://beauville.github.io/chez-baptiste-digiy-loc/",
+  pos: "https://digiylyfe.com/vitrine-boutique/",
+  resto: "https://digiylyfe.com/vitrine-resto/",
+  resa: "https://digiylyfe.com/vitrine-resa-table/",
+  pay: "https://beauville.github.io/digiy-pay/",
+  build: "https://beauville.github.io/DIGIY-BUILD---Professionnel-du-b-timent/",
+  market: "https://beauville.github.io/digiy-market/",
+  jobs: "https://digiylyfe.com/digiy-jobs/",
+  bonplan: "https://beauville.github.io/DIGIY-BONNE-AFFAIRE/",
+  inscription: "https://beauville.github.io/inscription-digiy/",
+  dashboard: "https://beauville.github.io/mon-espace-digiy/"
+};
